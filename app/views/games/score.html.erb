@@ -1,0 +1,13 @@
+<% if @included %>
+  <% if @english %>
+    <p>Congratulations, <%= @attempt%> is a valid English word! </p>
+  <% else %>
+    <p>You fucked up, <%= @attempt%> is not and valid English word! </p>
+  <% end %>
+<% else %>
+  <p>You fucked up, <%= @attempt%> is not on the grid !</p>
+<% end %>
+
+<button class="btn-primary->
+<%= link_to "Play again", new_path %>
+</button>
